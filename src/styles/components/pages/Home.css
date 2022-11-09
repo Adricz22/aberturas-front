@@ -1,0 +1,7 @@
+.oscuro {
+    filter: brightness(80%);
+}
+
+.index {
+    z-index: 0;
+}

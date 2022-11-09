@@ -1,0 +1,39 @@
+footer {
+    background-color: #ccc;
+    background-color: rgb(1, 15, 17);
+    color: white;
+    padding: 2em 0;
+}
+
+.social_foo {
+    float: right;
+    position: relative;
+    right: 10px;
+}
+
+.social_foo a {
+    margin-right: 5px;
+}
+
+.social_foo a img:hover {
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px white;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: all .5s ease-in-out;
+}
+
+.copyright {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        transform: scale(0.8);
+    }
+
+    .social_foo {
+        display: none;
+    }
+}

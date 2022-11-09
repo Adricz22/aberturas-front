@@ -1,0 +1,53 @@
+.servicios {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 99%;
+    height: 550px;
+    margin-bottom: 130px;
+}
+
+
+.borde {
+    border-radius: 2%;
+    max-height: 320px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.sal {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.card {
+    height: 650px;
+    background-color: rgb(250, 244, 244);
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 0 0 3% 3%;
+    border-style: none;
+    box-shadow: 10px 3px 3px black;
+}
+
+@media (max-width: 768px) {
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 98%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .card {
+        border-radius: 2%;
+    }
+
+    .borde {
+        max-width: 320px;
+    }
+}
