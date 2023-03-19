@@ -1,39 +1,44 @@
-footer {
-    background-color: #ccc;
-    background-color: rgb(1, 15, 17);
-    color: white;
-    padding: 2em 0;
+.container--footer {
+  background-color: rgb(1, 15, 17);
+  color: white;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+
+  /* fix footer bottom, App.css */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .social_foo {
-    float: right;
-    position: relative;
-    right: 10px;
+  margin-right: 15px;
 }
 
 .social_foo a {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .social_foo a img:hover {
-    -webkit-border-radius: 50%;
-    box-shadow: 0px 0px 5px 5px white;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transition: all .5s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px white;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
 }
 
 .copyright {
-    display: inline-block;
-    margin-left: 10px;
+  /* display: inline-block; */
+  margin-left: 15px;
 }
 
 @media (max-width: 768px) {
-    .copyright {
-        transform: scale(0.8);
-    }
+  .copyright {
+    transform: scale(0.8);
+  }
 
-    .social_foo {
-        display: none;
-    }
+  .social_foo {
+    display: none;
+  }
 }

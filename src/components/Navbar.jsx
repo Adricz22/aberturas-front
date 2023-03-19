@@ -41,13 +41,21 @@ function Navbar() {
           </NavLink>
 
           <div className="social">
-            <a href="https://www.instagram.com/" target="_blank">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src="/img/instagram.png" width="20px" alt="Logo alt" />
             </a>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src="/img/facebook.png" width="20px" alt="Logo alt" />
             </a>
-            <a href="https://www.twitter.com/" target="_blank">
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
               <img src="/img/twitter.png" width="20px" alt="Logo alt" />
             </a>
           </div>
@@ -140,20 +148,23 @@ const NavContainer = styled.nav`
 
   // menu lateral
   .links.active {
-    top: 20%;
+    top: 120px;
     left: 0;
     right: 0;
     align-items: center;
     text-align: center;
     z-index: 2;
     a {
+      width: 300px;
       font-size: 2rem;
       margin-top: 1rem;
       color: white;
       display: block;
+      // text-align: start;
     }
     .social {
-      display: inline;
+      display: block;
+      width: 300px;
     }
     .social a {
       position: relative;
@@ -178,10 +189,10 @@ const BgDiv = styled.div`
   transition: all 0.9s ease;
 
   &.active {
-    border-radius: 0 0 40% 0;
+    border-radius: 0 0 10% 0;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 75%;
+    width: 300px;
+    height: 450px;
   }
 `;
